@@ -1,5 +1,5 @@
 /*!
- * vue-clipboards v0.2.4
+ * vue-clipboards v0.2.6
  * (c) 2017 卓文理 <531840344@qq.com>
  * Released under the MIT License.
  */
@@ -166,7 +166,7 @@
 
               if (events && (typeof events === 'undefined' ? 'undefined' : _typeof(events)) === 'object' && Object.keys(events).length) {
                   Object.keys(events).map(function (cb) {
-                      return clipboards.on(cb, events[cb].fn);
+                      return clipboards.on(cb, events[cb].fns);
                   });
               }
           },

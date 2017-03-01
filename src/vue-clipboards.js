@@ -30,7 +30,7 @@ export default function (Vue) {
             const events = listeners && listeners || on && on;
 
             if (events && typeof events === 'object' && Object.keys(events).length) {
-                Object.keys(events).map(cb => clipboards.on(cb, events[cb].fn));
+                Object.keys(events).map(cb => clipboards.on(cb, events[cb].fns));
             }
         },
         unbind () {
